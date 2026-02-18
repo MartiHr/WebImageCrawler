@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h2>Results</h2>
+
+{{range .}}
+<div style="display:inline-block;margin:10px;text-align:center;">
+    <img src="{{.ThumbnailPath}}" alt="{{.Alt}}" style="max-width:200px;">
+    {{.Filename}}<br>
+    {{.Width}}x{{.Height}}<br>
+    {{.Format}}
+</div>
+{{else}}
+<p>No results</p>
+{{end}}
+
+<br><br>
+<a href="/">Back</a>
+</body>
+</html>

@@ -1,0 +1,17 @@
+main.go
+    Parses CLI flags
+    Creates context with timeout
+    Starts crawler engine
+Engine:
+    Starts N workers
+    Pushes start URLs into jobs
+Worker:
+    Receives URL from jobs
+    Checks if already visited
+    Acquires semaphore
+    Processes URL (currently simulated)
+    Releases semaphore
+Timeout hits:
+    Context cancels
+    Workers exit
+    Program terminates cleanly

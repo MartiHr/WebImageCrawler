@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Image Search</h2>
+
+<form action="/search">
+
+    URL contains:<br>
+    <input name="url"><br><br>
+
+    Filename contains:<br>
+    <input name="filename"><br><br>
+
+    Alt text contains:<br>
+    <input name="alt"><br><br>
+
+    Title contains:<br>
+    <input name="title"><br><br>
+
+    Format:
+    <select name="format">
+        <option value="">Any</option>
+        <option value="png">PNG</option>
+        <option value="jpg">JPG</option>
+        <option value="webp">WEBP</option>
+        <option value="svg">SVG</option>
+    </select><br><br>
+
+    Min width: <input name="min_width" type="number">
+    Max width: <input name="max_width" type="number"><br><br>
+
+    Min height: <input name="min_height" type="number">
+    Max height: <input name="max_height" type="number"><br><br>
+
+    <button type="submit">Search</button>
+
+</form>
+
+</body>
+</html>
+
