@@ -99,4 +99,4 @@ You can search for images using filters like:
 TODO: No tests detected. Add unit tests for crawler and parser logic.
 
 ## License
-TODO: Add LICENSE file.
+Apache-2.0 license
